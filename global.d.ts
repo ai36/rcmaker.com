@@ -1,5 +1,7 @@
 import en from './messages/en.json'
 
+type Messages = typeof en
+
 declare module 'next-intl' {
-  interface IntlMessages extends typeof en {}
+  interface IntlMessages extends Messages {}
 }
