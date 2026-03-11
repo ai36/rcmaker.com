@@ -1,0 +1,100 @@
+{
+  "Nav": {
+    "docs": "Docs",
+    "changelog": "Changelog",
+    "roadmap": "Roadmap",
+    "marketplace": "Marketplace"
+  },
+  "Footer": {
+    "tagline": "VS Code extension for React developers",
+    "copyright": "Open source, MIT license."
+  },
+  "Theme": {
+    "light": "Light",
+    "system": "System",
+    "dark": "Dark"
+  },
+  "Hero": {
+    "badge": "VS Code Extension — v0.0.8",
+    "title": "React Component",
+    "titleAccent": "in one right-click",
+    "description": "Generate fully structured React components from your own templates — with styles, index files, types, and tests — without leaving VS Code.",
+    "installBtn": "Install Extension",
+    "docsBtn": "View Docs",
+    "githubBtn": "GitHub",
+    "stat0": "TypeScript & JavaScript",
+    "stat1": "5 naming styles",
+    "stat2": "Per-project config",
+    "stat3": "CSS / SCSS / Modules"
+  },
+  "HowItWorks": {
+    "title": "How it works",
+    "subtitle": "Three steps from folder to component",
+    "step0Title": "Right-click a folder",
+    "step0Desc": "In VS Code Explorer, right-click any folder and choose \"Create React Component\".",
+    "step1Title": "Name your component",
+    "step1Desc": "Enter the component name. Casing is applied automatically based on your settings.",
+    "step2Title": "Pick a template",
+    "step2Desc": "Select from your custom templates. Files are generated instantly."
+  },
+  "Features": {
+    "title": "Everything you need",
+    "subtitle": "Flexible, template-driven component scaffolding",
+    "item0Title": "Custom Templates",
+    "item0Desc": "Create components from your own .jsx / .tsx templates stored in the .react-templates folder.",
+    "item1Title": "TypeScript & JavaScript",
+    "item1Desc": "Supports both .tsx and .jsx workflows with a single toggle in settings.",
+    "item2Title": "Style Files",
+    "item2Desc": "Auto-generate CSS, SCSS, or CSS Modules alongside every component.",
+    "item3Title": "Index & Type Files",
+    "item3Desc": "Barrel re-exports and types.ts generated from configurable templates.",
+    "item4Title": "Unit Tests",
+    "item4Desc": "Scaffold test files in a tests/ subfolder using your own test template.",
+    "item5Title": "Naming Styles",
+    "item5Desc": "Choose PascalCase, camelCase, kebab-case, snake_case or lowercase — per file and folder.",
+    "item6Title": "Per-project Config",
+    "item6Desc": "Drop a .rcmakerrc.json next to package.json — no more switching global settings.",
+    "item7Title": "Right-Click Workflow",
+    "item7Desc": "Just right-click any folder in Explorer and choose \"Create React Component\". Done."
+  },
+  "Config": {
+    "badge": "Per-project config",
+    "title": "One file, one project",
+    "desc1": "Drop a .rcmakerrc.json next to your package.json and the extension picks it up automatically. No more touching global settings when switching between projects.",
+    "desc2": "Local settings take priority over global ones. Missing fields fall back gracefully.",
+    "cta": "Full config reference"
+  },
+  "CTA": {
+    "title": "Ready to speed up your workflow?",
+    "desc": "Install from the VS Code Marketplace and start generating components in seconds.",
+    "installBtn": "Install Extension",
+    "docsBtn": "Read the docs"
+  },
+  "Sidebar": {
+    "gettingStarted": "Getting Started",
+    "introduction": "Introduction",
+    "features": "Features",
+    "howToUse": "How to Use",
+    "configuration": "Configuration",
+    "settings": "Settings",
+    "projectConfig": "Project Config (.rcmakerrc.json)",
+    "templateFolder": "Template Folder",
+    "templates": "Templates",
+    "availableLiterals": "Available Literals",
+    "fileFolderNames": "File & Folder Names",
+    "nameFormats": "Name Formats",
+    "more": "More",
+    "changelog": "Changelog",
+    "roadmap": "Roadmap"
+  },
+  "Docs": {
+    "metaTitle": "Documentation",
+    "metaDesc": "RC Maker — VS Code extension documentation"
+  },
+  "Changelog": {
+    "metaTitle": "Changelog"
+  },
+  "Roadmap": {
+    "metaTitle": "Roadmap"
+  }
+}
