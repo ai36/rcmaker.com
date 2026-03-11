@@ -182,57 +182,62 @@ export default async function HomePage({
       <Separator className="opacity-30" />
 
       {/* ── How it works ─────────────────────────────────── */}
-      <section className="px-6 py-20 max-w-5xl mx-auto w-full">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl font-bold tracking-tight">{t('HowItWorks.title')}</h2>
-          <p className="mt-3 text-muted-foreground">{t('HowItWorks.subtitle')}</p>
-        </div>
+      <section className="px-6 py-20">
+        <div className="max-w-5xl mx-auto w-full">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl font-bold tracking-tight">{t('HowItWorks.title')}</h2>
+            <p className="mt-3 text-muted-foreground">{t('HowItWorks.subtitle')}</p>
+          </div>
 
-        <div className="relative grid md:grid-cols-3 gap-6">
-          {/* Connecting line (desktop) */}
-          <div className="hidden md:block absolute top-8 left-[calc(16.66%+24px)] right-[calc(16.66%+24px)] h-px border-t border-dashed border-border/60" />
+          <div className="relative grid md:grid-cols-3 gap-6">
+            {/* Connecting line (desktop) */}
+            <div className="hidden md:block absolute top-8 left-[calc(16.66%+24px)] right-[calc(16.66%+24px)] h-px border-t border-dashed border-border/60" />
 
-          {STEPS.map(({ step, title, desc }) => (
-            <div key={step} className="relative flex flex-col items-start rounded-xl border border-border bg-card p-6">
-              <div className="mb-5 flex size-10 items-center justify-center rounded-full border-2 border-border bg-background text-sm font-bold text-foreground tabular-nums z-10">
-                {step}
+            {STEPS.map(({ step, title, desc }) => (
+              <div key={step} className="relative flex flex-col items-start rounded-xl border border-border bg-card p-6">
+                <div className="mb-5 flex size-10 items-center justify-center rounded-full border-2 border-border bg-background text-sm font-bold text-foreground tabular-nums z-10">
+                  {step}
+                </div>
+                <h3 className="font-semibold text-foreground">{title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{desc}</p>
               </div>
-              <h3 className="font-semibold text-foreground">{title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       <Separator className="opacity-30" />
 
       {/* ── Features ─────────────────────────────────────── */}
-      <section className="px-6 py-20 max-w-5xl mx-auto w-full">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight">{t('Features.title')}</h2>
-          <p className="mt-3 text-muted-foreground">{t('Features.subtitle')}</p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {FEATURES.map(({ icon, title, desc }) => (
-            <div
-              key={title}
-              className="group relative rounded-xl border border-border bg-card p-5 transition-all hover:border-transparent hover:shadow-md hover:shadow-black/5 overflow-hidden"
-            >
-              <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity -z-10 bg-gradient-to-br from-border via-border/50 to-transparent [padding:1px]" />
-              <div className="mb-3 flex size-9 items-center justify-center rounded-lg bg-muted text-muted-foreground">
-                {icon}
+      <section className="px-6 py-20">
+        <div className="max-w-5xl mx-auto w-full">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight">{t('Features.title')}</h2>
+            <p className="mt-3 text-muted-foreground">{t('Features.subtitle')}</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {FEATURES.map(({ icon, title, desc }) => (
+              <div
+                key={title}
+                className="group relative rounded-xl border border-border bg-card p-5 transition-all hover:border-transparent hover:shadow-md hover:shadow-black/5 overflow-hidden"
+              >
+                <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity -z-10 bg-gradient-to-br from-border via-border/50 to-transparent [padding:1px]" />
+                <div className="mb-3 flex size-9 items-center justify-center rounded-lg bg-muted text-muted-foreground">
+                  {icon}
+                </div>
+                <h3 className="font-semibold text-sm text-foreground">{title}</h3>
+                <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">{desc}</p>
               </div>
-              <h3 className="font-semibold text-sm text-foreground">{title}</h3>
-              <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">{desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       <Separator className="opacity-30" />
 
       {/* ── Config example ────────────────────────────────── */}
-      <section className="px-6 py-20 max-w-5xl mx-auto w-full">
+      <section className="px-6 py-20">
+        <div className="max-w-5xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <Badge variant="outline" className="mb-4 text-xs">{t('Config.badge')}</Badge>
@@ -285,6 +290,7 @@ export default async function HomePage({
               </pre>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
