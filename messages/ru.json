@@ -1,0 +1,100 @@
+{
+  "Nav": {
+    "docs": "Документация",
+    "changelog": "Changelog",
+    "roadmap": "Roadmap",
+    "marketplace": "Marketplace"
+  },
+  "Footer": {
+    "tagline": "Расширение VS Code для React-разработчиков",
+    "copyright": "Открытый исходный код, лицензия MIT."
+  },
+  "Theme": {
+    "light": "Светлая",
+    "system": "Системная",
+    "dark": "Тёмная"
+  },
+  "Hero": {
+    "badge": "Расширение VS Code — v0.0.8",
+    "title": "React-компонент",
+    "titleAccent": "одним правым кликом",
+    "description": "Генерируйте полноценные React-компоненты по своим шаблонам — со стилями, index-файлами, типами и тестами — не выходя из VS Code.",
+    "installBtn": "Установить расширение",
+    "docsBtn": "Документация",
+    "githubBtn": "GitHub",
+    "stat0": "TypeScript и JavaScript",
+    "stat1": "5 стилей именования",
+    "stat2": "Конфигурация на проект",
+    "stat3": "CSS / SCSS / Modules"
+  },
+  "HowItWorks": {
+    "title": "Как это работает",
+    "subtitle": "Три шага от папки до компонента",
+    "step0Title": "Правый клик по папке",
+    "step0Desc": "В проводнике VS Code кликните правой кнопкой по любой папке и выберите «Create React Component».",
+    "step1Title": "Назовите компонент",
+    "step1Desc": "Введите имя компонента. Стиль написания применяется автоматически согласно настройкам.",
+    "step2Title": "Выберите шаблон",
+    "step2Desc": "Выберите один из своих шаблонов. Файлы генерируются мгновенно."
+  },
+  "Features": {
+    "title": "Всё что нужно",
+    "subtitle": "Гибкая, шаблонная генерация компонентов",
+    "item0Title": "Свои шаблоны",
+    "item0Desc": "Создавайте компоненты по собственным .jsx / .tsx шаблонам из папки .react-templates.",
+    "item1Title": "TypeScript и JavaScript",
+    "item1Desc": "Поддержка .tsx и .jsx — переключается одной настройкой.",
+    "item2Title": "Файлы стилей",
+    "item2Desc": "Автоматическая генерация CSS, SCSS или CSS Modules вместе с каждым компонентом.",
+    "item3Title": "Index и Types файлы",
+    "item3Desc": "Barrel re-exports и types.ts генерируются из настраиваемых шаблонов.",
+    "item4Title": "Unit-тесты",
+    "item4Desc": "Тестовые файлы создаются в подпапке tests/ по вашему шаблону.",
+    "item5Title": "Стили именования",
+    "item5Desc": "Выбирайте PascalCase, camelCase, kebab-case, snake_case или lowercase — отдельно для файлов и папок.",
+    "item6Title": "Конфигурация на проект",
+    "item6Desc": "Добавьте .rcmakerrc.json рядом с package.json — и глобальные настройки больше не нужны.",
+    "item7Title": "Работа по правому клику",
+    "item7Desc": "Правый клик по папке, «Create React Component» — и готово."
+  },
+  "Config": {
+    "badge": "Конфигурация на проект",
+    "title": "Один файл — один проект",
+    "desc1": "Добавьте .rcmakerrc.json рядом с package.json, и расширение подхватит его автоматически. Больше не нужно менять глобальные настройки при переключении между проектами.",
+    "desc2": "Локальные настройки имеют приоритет над глобальными. Отсутствующие поля подхватываются из глобальных.",
+    "cta": "Полный справочник настроек"
+  },
+  "CTA": {
+    "title": "Готовы ускорить разработку?",
+    "desc": "Установите из VS Code Marketplace и начните генерировать компоненты за секунды.",
+    "installBtn": "Установить расширение",
+    "docsBtn": "Читать документацию"
+  },
+  "Sidebar": {
+    "gettingStarted": "Начало работы",
+    "introduction": "Введение",
+    "features": "Возможности",
+    "howToUse": "Как использовать",
+    "configuration": "Конфигурация",
+    "settings": "Настройки",
+    "projectConfig": "Конфиг проекта (.rcmakerrc.json)",
+    "templateFolder": "Папка шаблонов",
+    "templates": "Шаблоны",
+    "availableLiterals": "Доступные литералы",
+    "fileFolderNames": "Имена файлов и папок",
+    "nameFormats": "Форматы имени",
+    "more": "Дополнительно",
+    "changelog": "История изменений",
+    "roadmap": "Дорожная карта"
+  },
+  "Docs": {
+    "metaTitle": "Документация",
+    "metaDesc": "RC Maker — документация расширения VS Code"
+  },
+  "Changelog": {
+    "metaTitle": "История изменений"
+  },
+  "Roadmap": {
+    "metaTitle": "Дорожная карта"
+  }
+}
