@@ -55,9 +55,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider messages={messages}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         <SiteHeader />
-        <div className="mx-auto w-full max-w-[1500px]">
-          {children}
-        </div>
+        {children}
       </ThemeProvider>
     </NextIntlClientProvider>
   )

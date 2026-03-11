@@ -12,7 +12,7 @@ export function Sidebar() {
   const locale = useLocale()
 
   return (
-    <aside className="hidden md:flex flex-col w-60 shrink-0 fixed top-14 bottom-0 left-0 border-r border-border/40 overflow-y-auto py-6 px-4">
+    <aside className="hidden md:flex flex-col w-60 shrink-0 sticky top-14 self-start h-[calc(100vh-3.5rem)] border-r border-border/40 overflow-y-auto py-6 px-4">
       <nav className="flex flex-col gap-6">
         {SIDEBAR_ITEMS.map((section) => (
           <div key={section.titleKey}>
