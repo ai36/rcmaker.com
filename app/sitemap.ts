@@ -1,24 +1,24 @@
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '@/constants'
 
-const pages = [
-  { path: '',           priority: 1.0, changeFrequency: 'weekly' as const },
-  { path: '/docs',      priority: 0.8, changeFrequency: 'weekly'  as const },
-  { path: '/changelog', priority: 0.7, changeFrequency: 'weekly'  as const },
-  { path: '/roadmap',   priority: 0.6, changeFrequency: 'weekly' as const },
-]
+const subpages = ['/docs', '/changelog', '/roadmap']
+const now = new Date()
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return pages.map(({ path, priority, changeFrequency }) => ({
-    url: `${SITE_URL}${path}`,
-    alternates: {
-      languages: {
-        en: `${SITE_URL}${path}`,
-        ru: `${SITE_URL}/ru${path}`,
-      },
-    },
-    changeFrequency,
-    priority,
-    lastModified: new Date(),
-  }))
+  return [
+    { url: `${SITE_URL}/`,         priority: 1.00, changeFrequency: 'weekly', lastModified: now },
+    ...subpages.map(path => ({
+      url:             `${SITE_URL}${path}`,
+      priority:        0.80,
+      changeFrequency: 'weekly' as const,
+      lastModified:    now,
+    })),
+    { url: `${SITE_URL}/ru`,       priority: 0.80, changeFrequency: 'weekly', lastModified: now },
+    ...subpages.map(path => ({
+      url:             `${SITE_URL}/ru${path}`,
+      priority:        0.64,
+      changeFrequency: 'weekly' as const,
+      lastModified:    now,
+    })),
+  ]
 }
