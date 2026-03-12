@@ -96,5 +96,10 @@
   },
   "Roadmap": {
     "metaTitle": "Roadmap"
+  },
+  "Consent": {
+    "message": "We use analytics to improve your experience. You can opt out at any time.",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

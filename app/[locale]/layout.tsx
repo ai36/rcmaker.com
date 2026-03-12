@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import { SiteHeader } from '@/components/layout/SiteHeader'
+import { ConsentBanner } from '@/components/ConsentBanner'
 import { PROJECT_NAME, SITE_DESCRIPTION, SITE_URL } from '@/constants'
 import { ogLocale } from '@/lib/metadata'
 import { routing } from '@/i18n/routing'
@@ -56,6 +57,7 @@ export default async function LocaleLayout({
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         <SiteHeader />
         {children}
+        <ConsentBanner />
       </ThemeProvider>
     </NextIntlClientProvider>
   )
