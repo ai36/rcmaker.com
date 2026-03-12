@@ -13,6 +13,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang={locale} suppressHydrationWarning className="scroll-smooth">
       <head>
+        <meta name="google-site-verification" content="9m21iS8l66LT5GGhFN_-H8hHEkP-f4ekCkIpCaqUs9I" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         {/* GA Consent Mode v2 — must run before gtag.js loads (afterInteractive) */}
         <script dangerouslySetInnerHTML={{ __html: `

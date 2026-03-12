@@ -26,7 +26,7 @@ export function SiteHeader() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-semibold shrink-0 touch-manipulation" onClick={() => setOpen(false)}>
-            <Image src="/logo.svg" alt="React Component Maker" width={36} height={36} className="shrink-0" />
+            <Image src="/logo.svg" alt="React Component Maker" width={32} height={32} className="shrink-0" />
             <span className="text-sm">React Component Maker</span>
           </Link>
 
