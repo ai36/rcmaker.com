@@ -3,6 +3,7 @@ import { Link } from '@/i18n/navigation'
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 import { NAV_ITEMS, EXTERNAL_LINKS } from '@/constants'
+import { LocaleSwitchLink } from '@/components/LocaleSwitchLink'
 
 export async function SiteFooter() {
   const t = await getTranslations()
@@ -31,6 +32,8 @@ export async function SiteFooter() {
                 {t(`Nav.${item.labelKey}`)}
               </Link>
             ))}
+            <Separator orientation="vertical" className="h-4 hidden sm:block" />
+            <LocaleSwitchLink className="hover:text-foreground transition-colors touch-manipulation" />
             <Separator orientation="vertical" className="h-4 hidden sm:block" />
             <a
               href={EXTERNAL_LINKS.marketplace}
